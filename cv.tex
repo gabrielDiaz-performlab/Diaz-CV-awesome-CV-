@@ -1,0 +1,132 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+\usepackage[backend=biber, sorting=none,maxbibnames=99]{biblatex}
+\addbibresource{bib/journal_articles.bib}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-orange}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{RGB}{247, 105, 2}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[rectangle,noedge]{images/2025_with_text-01.png}
+
+
+\name{Gabriel J.}{Diaz}
+\position{Associate Professor}
+% \position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\address{Rochester Institute of Technology\enskip\cdotp\enskip Center for Imaging Science}
+\email{gabriel.diaz@rit.edu}
+\googlescholar{FTTH_l4AAAAJ}{}
+\homepage{https://www.rit.edu/science/perception-movement-lab}
+
+% \homepage{www.posquit0.com}
+% \github{posquit0}
+% \linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Gabriel J. Diaz~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{cv/appointments}
+\input{cv/education}
+\input{cv/articles}
+\input{cv/proceedings}
+\input{cv/talks}
+\input{cv/workshops}
+\input{cv/reviewing}
+\input{cv/funding}
+\input{cv/grad}
+\input{cv/classes}
+\input{cv/theses}
+\input{cv/pregrad}
+
+
+
+
+% \input{cv/skills.tex}
+% \input{cv/experience.tex}
+% \input{cv/experience.tex}
+% \input{cv/extracurricular.tex}
+% \input{cv/honors.tex}
+% \input{cv/presentation.tex}
+% \input{cv/writing.tex}
+% \input{cv/committees.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
